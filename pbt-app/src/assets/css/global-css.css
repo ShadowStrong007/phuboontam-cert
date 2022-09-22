@@ -1,0 +1,32 @@
+.h-100vh {
+height: 100vh;
+}
+
+.bg-color{
+    background-color: blue;
+}
+
+.bg-float-left{
+    float: left;
+}
+
+.bg-float-right{
+    float: right;
+}
+
+
+.header {
+    border:2px solid red;
+}
+
+.header-image {
+    width: 10%;
+    height: 10%;
+}
+
+
+.header-image, 
+.header-text {
+    display: inline-block;
+    vertical-align: baseline;
+}

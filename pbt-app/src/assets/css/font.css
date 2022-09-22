@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'THSarabunNew';
+    src: url('../font/THSarabunNew.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.font-th {
+    font-family: 'THSarabunNew';
+}
+
+.font-size-1-5rem{
+    font-size: 1.5em;
+}
+.font-size-1-2rem{
+    font-size: 1.2em;
+}
+.font-size-1rem{
+    font-size: 1em;
+}
+.font-size-2rem{
+    font-size: 2em;
+}
+
+.font-size-09rem{
+    font-size: 0.90em;
+}
+
+.font-size-06rem{
+    font-size: 0.60em;
+}
+
+.font-size-07rem{
+    font-size: 0.70em;
+}
+
+.font-size-08rem{
+    font-size: 0.80em;
+}
+
+.font-size{
+    font-size: 10em;
+}
+
+/* On screens that are 992px wide or less, the background color is blue */
+@media screen and (max-width: 992px) {
+    .font-size{
+        font-size: 3em;
+    }
+  }
+  
+  /* On screens that are 600px wide or less, the background color is olive */
+  @media screen and (max-width: 600px) {
+    .font-size{
+        font-size: 1.5em;
+    }
+  }
