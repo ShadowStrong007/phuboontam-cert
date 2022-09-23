@@ -39,20 +39,68 @@
     font-size: 0.80em;
 }
 
-.font-size{
-    font-size: 10em;
+/* .font-size{
+    font-size: 7vmin;
+} */
+
+.font-size-5v{
+    font-size: 5vmin;
 }
 
-/* On screens that are 992px wide or less, the background color is blue */
-@media screen and (max-width: 992px) {
+/* @media screen and (min-width: 375px) {
     .font-size{
-        font-size: 3em;
+        font-size: 4vmin;
     }
+}
+
+@media screen and (min-width: 414px) {
+    .font-size{
+        font-size: 5.5vmin;
+    }
+}
+
+/*iPad*/
+
+/* @media (min-width: 768px) and (max-width: 991px) {
+  .font-size {
+    font-size: 7vmin !important;
   }
-  
-  /* On screens that are 600px wide or less, the background color is olive */
-  @media screen and (max-width: 600px) {
-    .font-size{
-        font-size: 1.5em;
+} */
+
+/*iPad Pro > Notebook*/
+
+/* @media (min-width: 992px) and (max-width: 1199px) {
+  .font-size {
+    font-size: 8vmin !important;
+  }
+}  */
+
+
+/* .font-size {
+    font-size: 16px;
+}
+@media (min-width:768px) {
+    .font-size {
+        font-size: 18px;
     }
+}
+@media (min-width:1024px) {
+    .font-size {
+        font-size: 19px;
+    }
+}
+@media (min-width:1280px) {
+    .font-size {
+        font-size: 20px;
+    }
+} */
+
+/* 16px @ 768px increasing to 24px @ 1920px */
+:root {
+    font-size: min(max(16px, calc(1rem + (24 - 16) * ((100vw - 768px) / (1920 - 768)))), 24px);
+    /* Note: The calc base value (1rem) MUST be stated in REM to maintain accessibility */
+    /* Where: calc = min_font_size_in_rem + (max_font_size - min_font_size) * ((100vw - min_viewport_including_px_unit) / (max_viewport - min_viewport)) */
+  
+    /* Safari resize fix */
+    min-height: 0vw;
   }

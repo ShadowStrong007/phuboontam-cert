@@ -12,11 +12,12 @@ class Product extends React.Component {
 
   render() {
     return (
-      <div class="container">
+      <div class="container bg-body">
         <img src={starname} alt="Pineapple" className="header-image"/>
-        <p className="font-size-2rem header-text "> ชื่อพระเครื่อง</p>
-        <img src={starname} alt="Pineapple" className="header-image t"/>
-        <img src="https://pbtdata.blob.core.windows.net/image/20220918025549_TestDraw_S__7192645 2.jpg" class="img-fluid" alt="..."/>
+        <p className="header-text "> ทดลองใส่</p>
+        <img src={starname} alt="Pineapple" className="header-image"/>
+        {/* <img src="https://pbtdata.blob.core.windows.net/image/20220918025549_TestDraw_S__7192645 2.jpg" class="img-fluid" alt="..."/> */}
+        <img src="https://cdn.discordapp.com/attachments/836899783347798016/1021683462069043261/image-20220831-121316.png" class="img-fluid" alt="..."/>
       </div>
     );
   }

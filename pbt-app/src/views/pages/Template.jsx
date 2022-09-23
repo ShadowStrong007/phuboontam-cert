@@ -4,6 +4,10 @@ import Navbar from "../pages/Navbar";
 import Footer from "./Footer";
 import Product from "./Product";
 import logo from "../../assets/images/test/Logo/pbt-logo.png"
+import buttomright from "../../assets/images/bg/buttom-right.png"
+import buttomleft from "../../assets/images/bg/buttom-left.png"
+import topleft from "../../assets/images/bg/top-left.png"
+import topright from "../../assets/images/bg/top-right.png"
 
 export default class Home extends Component {
   constructor(props) {
@@ -29,7 +33,7 @@ export default class Home extends Component {
         }}
       >
         <div
-          className="bg-white"
+          className="bg-main"
           style={{
             height: "100vh",
             overflow: "hidden auto",
@@ -138,6 +142,10 @@ export default class Home extends Component {
               <div className="text-secondary font-size-06rem">
               <strong>Copyright &copy; 2022</strong> www.phuboontam.com All rights reserved.
               </div>
+              <img src={topleft} className="bg-main-top-left" alt=""/>
+              <img src={topright} className="bg-main-top-right" alt=""/>
+              <img src={buttomright} className="bg-main-buttom-right" alt=""/>
+              <img src={buttomleft} className="bg-main-buttom-left" alt=""/>
             </div>
           </div>
         </div>

@@ -2,9 +2,69 @@
 height: 100vh;
 }
 
-.bg-color{
-    background-color: blue;
+.bg-footer{
+    background:url('../images/bg/bg-footer.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
+.bg-body{
+    background:url('../images/bg/bg-body.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.bg-main{ 
+  background: url('../images/bg/bg-main.png');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%; 
+  z-index: 1;
+}
+
+.bg-main-buttom-right{ 
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 15%;
+    z-index: -1
+  }
+
+  .bg-main-buttom-left{ 
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 15%;
+    z-index: -1
+  }
+
+  .bg-main-top-right{ 
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 15%;
+    z-index: -1
+  }
+
+  .bg-main-top-left{ 
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 15%;
+    z-index: -1
+  }
 
 .bg-float-left{
     float: left;
@@ -20,8 +80,8 @@ height: 100vh;
 }
 
 .header-image {
-    width: 10%;
-    height: 10%;
+    width: 3vw;
+    /* height: 10%; */
 }
 
 
@@ -30,3 +90,10 @@ height: 100vh;
     display: inline-block;
     vertical-align: baseline;
 }
+
+/* h1 {
+    font-size: 1.8rem;
+}
+h2 {
+    font-size: 1.5rem;
+} */
