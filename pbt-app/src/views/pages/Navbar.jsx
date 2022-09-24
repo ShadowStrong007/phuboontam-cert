@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../assets/images/test/Logo/pbt-logo.png"
+import star from "../../assets/images/bg/star.png"
 
 class Banner extends React.Component {
   constructor(props) {
@@ -12,25 +13,41 @@ class Banner extends React.Component {
 
   render() {
     return (
-      <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">หน้าหลัก</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">ติดต่อเรา</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+      <div class="mt-4 nav-bar">
+      <div class="nav-bar-image">
+        {/* Logo Here */}
+        <img
+          class="nav-bar-image-logo"
+          src={logo}
+          alt=""
+          draggable="false"
+        />
       </div>
+      <div class="nav-bar-wrp">
+        <div class="nav-bar-item">
+          <div class="nav-bar-item-image">
+            <img
+              class="w-100"
+              src={star}
+              alt=""
+              draggable="false"
+            />
+          </div>
+          <a  href="/" class="nav-bar-item-label nav-font-size"> หน้าหลัก </a>
+        </div>
+        <div class="nav-bar-item">
+          <div class="nav-bar-item-image">
+            <img
+              class="w-100"
+              src={star}
+              alt=""
+              draggable="false"
+            />
+          </div>
+          <a href="#about-me" class="nav-bar-item-label nav-font-size"> ติดต่อเรา </a>
+        </div>
+      </div>
+    </div>
     );
   }
 }

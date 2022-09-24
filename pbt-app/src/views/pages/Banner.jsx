@@ -1,48 +1,32 @@
 import React from "react";
-
+import CallBanner from "../../api/CallBanner";
 
 class Banner extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {      
-      mockbanner : [
-      {
-        id: 1,
-        name: "Tic Tac Toe game",
-        src: "https://cdn.discordapp.com/attachments/836899783347798016/1021683462069043261/image-20220831-121316.png",
-        default : true
-      },
-      {
-        id: 2,
-        name: "Tic Tac Toe game",
-        src: "https://cdn.discordapp.com/attachments/836899783347798016/1021683462069043261/image-20220831-121316.png",
-        default : false
-      }
-    ],
+    this.state = {
     banner : []
     };
   }
 
 
-  componentDidMount() {
+  componentWillMount() {
     this.innitBanner();
   }
 
   innitBanner = () =>{ 
-    this.setState({banner:this.state.mockbanner.map((o) => { return <div className={"carousel-item " + (o.default === true ? "active" : "")}><img key={o.id} src={o.src} class={"d-block w-100"} alt="..."/></div>})})
+    CallBanner().then((results)=>{
+      this.setState({banner:results.data.Banners.map((o) => { return <div className={"carousel-item banner-image " + (o.Seq === 1 ? "active" : "")}><img key={o.BannerId} src={o.Image_Url} class={"d-block w-100"} alt="..."/></div>})})
+    }).catch((error) => {
+
+    }); 
   }
 
   render() {
     return (
-      <div>
+      <div className="banner">
         <div id="carouselExampleControls" class="carousel slide border rounded-1" data-bs-ride="carousel">
           <div class="carousel-inner">
-    {/* <div class="carousel-item active">
-      <img src="https://cdn.discordapp.com/attachments/836899783347798016/1021683462069043261/image-20220831-121316.png" class="d-block w-100" alt="..."/>
-            </div>
-            <div class="carousel-item">
-            <img src="https://cdn.discordapp.com/attachments/836899783347798016/1021683462069043261/image-20220831-121316.png" class="d-block w-100" alt="..."/>
-            </div> */}
             {this.state.banner}
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">

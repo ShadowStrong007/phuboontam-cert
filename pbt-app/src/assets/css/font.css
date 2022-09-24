@@ -10,97 +10,10 @@
     font-family: 'THSarabunNew';
 }
 
-.font-size-1-5rem{
-    font-size: 1.5em;
-}
-.font-size-1-2rem{
-    font-size: 1.2em;
-}
-.font-size-1rem{
-    font-size: 1em;
-}
-.font-size-2rem{
-    font-size: 2em;
+.nav-font-size{
+    font-size: 25px;
 }
 
-.font-size-09rem{
-    font-size: 0.90em;
+.copy-right-size{
+    font-size: 20px;
 }
-
-.font-size-06rem{
-    font-size: 0.60em;
-}
-
-.font-size-07rem{
-    font-size: 0.70em;
-}
-
-.font-size-08rem{
-    font-size: 0.80em;
-}
-
-/* .font-size{
-    font-size: 7vmin;
-} */
-
-.font-size-5v{
-    font-size: 5vmin;
-}
-
-/* @media screen and (min-width: 375px) {
-    .font-size{
-        font-size: 4vmin;
-    }
-}
-
-@media screen and (min-width: 414px) {
-    .font-size{
-        font-size: 5.5vmin;
-    }
-}
-
-/*iPad*/
-
-/* @media (min-width: 768px) and (max-width: 991px) {
-  .font-size {
-    font-size: 7vmin !important;
-  }
-} */
-
-/*iPad Pro > Notebook*/
-
-/* @media (min-width: 992px) and (max-width: 1199px) {
-  .font-size {
-    font-size: 8vmin !important;
-  }
-}  */
-
-
-/* .font-size {
-    font-size: 16px;
-}
-@media (min-width:768px) {
-    .font-size {
-        font-size: 18px;
-    }
-}
-@media (min-width:1024px) {
-    .font-size {
-        font-size: 19px;
-    }
-}
-@media (min-width:1280px) {
-    .font-size {
-        font-size: 20px;
-    }
-} */
-
-/* 16px @ 768px increasing to 24px @ 1920px */
-:root {
-    font-size: min(max(16px, calc(1rem + (24 - 16) * ((100vw - 768px) / (1920 - 768)))), 24px);
-    /* Note: The calc base value (1rem) MUST be stated in REM to maintain accessibility */
-    /* Where: calc = min_font_size_in_rem + (max_font_size - min_font_size) * ((100vw - min_viewport_including_px_unit) / (max_viewport - min_viewport)) */
-  
-    /* Safari resize fix */
-    min-height: 0vw;
-  }
