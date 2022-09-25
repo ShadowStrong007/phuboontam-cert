@@ -55,7 +55,7 @@ export default class Product extends Component {
           <Navbar/>
           <div class="mt-4 content">
             <div class="mt-4 content-title">
-            <b>{this.state.name}</b>
+            <b>{this.state.name != "" ? this.state.name : "ไม่พบข้อมูล"}</b>
             </div>
             <div class="mt-4 content-desc">
             <img src={this.state.products_front} className="img-fluid" draggable="false" alt="..."/>
