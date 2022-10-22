@@ -307,3 +307,10 @@ body {
     font-size: 35px;
   }
 }
+
+
+.product-desc{
+  max-width: 70%;
+  margin: auto;
+  text-align: unset;
+}

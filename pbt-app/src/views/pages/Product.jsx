@@ -68,7 +68,7 @@ export default class Product extends Component {
               <br/>
               <br/>
               {this.state.product_descs}
-              {<div dangerouslySetInnerHTML={{ __html: this.state.product_desc  }} />}     
+              {<div className="product-desc" dangerouslySetInnerHTML={{ __html: this.state.product_desc  }} />}     
               <br/>      
             </div>
           </div>
