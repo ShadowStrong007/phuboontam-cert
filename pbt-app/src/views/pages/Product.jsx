@@ -37,7 +37,10 @@ export default class Product extends Component {
         });
 
         this.setState({product_descs:results.data.Images.map((o) => { 
-          return <div><img key={o.ImageId} src={o.Image_Url} className="img-fluid" draggable="false" alt="..."/ ><br/><br/></div> })
+          if(o.Type == 1) return <div><img key={o.ImageId} src={o.Image_Url} className="img-fluid" draggable="false" alt="..."/ ><br/><br/></div> 
+          else if (o.Type == 2) return <div><video src={o.Image_Url} width="750" height="500" controls/><br/><br/></div> 
+          else if(o.Type == 3) return <div><div dangerouslySetInnerHTML={{__html: o.Image_Url}} /><br/><br/></div>
+          })
         });
 
       }).catch((error) => {
